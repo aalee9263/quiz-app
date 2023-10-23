@@ -8,7 +8,7 @@ body{
     background: #1C1C1C;
 }
 .app {
-    background: #9f5fe8;
+    background: #7e5f9e;
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
@@ -32,11 +32,11 @@ body{
     font-weight: 600;
 }
 .btn {
-    background: #8f54d1;
+    background: #7e5f9e;
     color: #180c25;
     font-weight: 500;
     width: 100%;
-    border: 1px solid #222;
+    border: 1px solid #7e5f9e;
     padding: 10px;
     margin: 10px 0;
     text-align: left;
@@ -53,7 +53,7 @@ body{
     cursor:no-drop;
 }
 #next-btn{
-    background: #001e4d;
+    background: #7e5f9e;
     color: #fff;
     font-weight: 500;
     width: 150px;
