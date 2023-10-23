@@ -43,7 +43,7 @@ body{
     cursor: pointer;
     transition: all 0.3s;
 }
-btn:hover{
+.btn:hover{
     background: #222;
     color: #fff;
 }
@@ -58,6 +58,5 @@ btn:hover{
     border-radius: 4px;
     cursor: pointer;
     display: block;
-    text-align: center;
     display: none;
 }
