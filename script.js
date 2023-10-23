@@ -79,6 +79,7 @@ function selectAnswer (e) {
   const isCorrect = selectBtn.dataset.correct === "true";
   if(isCorrect){
     selec.classList.add("correct");
+    score++;
   }else{ selectBtn.classList.add("incorrect");
 }
 Array.from(answerButtons.children).forEach(button => {
@@ -90,4 +91,27 @@ Array.from(answerButtons.children).forEach(button => {
 nextButton.style.display = "block";
 }
 
-startQuiz()
+function showScore({
+  resetState();
+  questionElement.innerHTML = `Your score ${score} out of ${questions.length}!`;
+  nextButton.innerHTML = "Play Again";
+  nextButton.style.display = "block";
+
+})
+
+function handleNextButton(){
+  currentQuestionIndex++;
+  if(currentQuestionIndex < questions.length){
+    showQuestion();
+  }else{
+    showScore();
+  }
+}
+
+nextButton.removeEventListener("click", ()=>{
+  if(currentQuestionIndex < questions.length) {
+    handleNextButton();
+  }else{
+    startQuiz()
+  }
+});
