@@ -60,3 +60,9 @@ body{
     display: block;
     display: none;
 }
+.correct {
+    background: #5ecd8e;
+}
+.incorrect {
+    background: #ff9393;
+}
